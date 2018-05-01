@@ -1,4 +1,4 @@
-package com.adwa.docmodule;
+package com.steve.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,19 +16,19 @@ import java.io.File;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import static com.adwa.docmodule.AdwaDocUtils.getBitmapFromPdf;
+import static com.steve.view.DocUtils.getBitmapFromPdf;
 
 /**
  * Created by Steve Tchatchouang on 16/01/2018
  */
 
-public class AdwaDocView extends ImageView {
+public class DocView extends ImageView {
 
     static final         int    NONE  = 0;
     static final         int    DRAG  = 1;
     static final         int    ZOOM  = 2;
     static final         int    CLICK = 3;
-    private static final String TAG   = AdwaDocView.class.getSimpleName();
+    private static final String TAG   = DocView.class.getSimpleName();
     private static Executor executor;
 
     static {
@@ -48,15 +48,15 @@ public class AdwaDocView extends ImageView {
     int oldMeasuredWidth, oldMeasuredHeight;
     ScaleGestureDetector mScaleDetector;
 
-    public AdwaDocView(Context context) {
+    public DocView(Context context) {
         this(context, null);
     }
 
-    public AdwaDocView(Context context, AttributeSet attr) {
+    public DocView(Context context, AttributeSet attr) {
         this(context, attr, 0);
     }
 
-    public AdwaDocView(Context context, AttributeSet attr, int defStyle) {
+    public DocView(Context context, AttributeSet attr, int defStyle) {
         super(context, attr, defStyle);
         super.setClickable(true);
         mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());

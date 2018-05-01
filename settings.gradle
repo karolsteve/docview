@@ -1,1 +1,1 @@
-include ':app', ':docmodule'
+include ':app', ':docview'

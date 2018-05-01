@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/docmodule" />
+            <option value="$PROJECT_DIR$/docview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

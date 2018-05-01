@@ -1,7 +1,6 @@
-package com.adwa.docmodule;
+package com.steve.view;
 
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.pdf.PdfRenderer;
@@ -13,7 +12,7 @@ import java.io.File;
  * Created by Steve Tchatchouang on 17/01/2018
  */
 
-public class AdwaDocUtils {
+public class DocUtils {
     static Bitmap getBitmapFromPdf(String path, int page, boolean preview) throws Exception {
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {

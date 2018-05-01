@@ -1,4 +1,4 @@
-package com.adwa.docmodule;
+package com.steve.view;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.adwa.docmodule;
+package com.steve.view;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
